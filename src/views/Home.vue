@@ -1,27 +1,10 @@
 <template>
-  <!-- <div class="main-contener">
-  	<header class="header">
-  		<a href="#" class="header-logo">Elearn<span class="orange-dot">.</span></a>
-      <img src="../assets/img/search.png" class="search_icon" alt="">
-  		<input type="text" placeholder="Введите ваш запрос" class="header-serchbar">
-  		<div class="header-profile">
-  			<img src="../assets/img/avatar2.png" alt="" class="header-profile__avatar">
-  			<p class="header-profile__name">Имя аккаунта</p>
-  			<p class="header-profile__status">Premium account</p>
-  			<button class="header-profile__notification"><img src="../assets/img/notification.png" alt=""></button>
-  			<button class="shop-notification"><img src="#" alt=""><img src="../assets/img/notification.png" alt=""></button>
-  		</div>
-
-  	</header>
-  </div> -->
-
   <div class="wrapper">
-    <div class="sidebar-nav">
+    <aside class="sidebar-nav">
       <a href="#" class="sidebar-nav__logo"
-        >Elearn<span class="orange-dot">.</span></a
-      >
+        >Elearn<span class="orange-dot">.</span></a>
       <nav class="sidebar-nav__navigation">
-        <a class="sidebar-nav__link" href="#">Главная</a>
+        <a class="sidebar-nav__link sidebar-nav__link_active" href="#">Главная</a>
         <a class="sidebar-nav__link" href="#">Электротехника</a>
         <a class="sidebar-nav__link" href="#">Favorite</a>
         <a class="sidebar-nav__link" href="#">Test</a>
@@ -29,8 +12,8 @@
         <a class="sidebar-nav__link" href="#">Certificate</a>
         <a class="sidebar-nav__link" href="#">Settings</a>
       </nav>
-    </div>
-    <div class="main-content">
+    </aside>
+    <article class="main-content">
       <div class="main-content__searchbar">
         <img
           src="../assets/img/search.png"
@@ -70,7 +53,8 @@
           <img src="#" alt="" class="main-content__lastReview-cart" />
         </div>
       </div>
-    </div>
+    </article>
+    <aside class="sidebar-content"></aside>
   </div>
 </template>
 

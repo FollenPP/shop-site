@@ -1,116 +1,44 @@
-@import "reset.css"
 @font-face
 	font-family: Poppins
 	font-style: normal
 	font-weight: 600
 	src: url('../fonts/poppins/Poppins-SemiBold.ttf')
-
-// body
-// 	background-image: url(../img/main-bg.jpg)
-// .main-contener 
-// 	position: absolute
-// 	left: 20%
-// 	top: 11.83%
-// 	bottom: 11.83%
-// 	background-color: #FDFDFD
-// 	border-radius: 24px
-// 	overflow: hidden
-// 	width: 1200px
-// 	height: 740px
-// .header 
-// 	display: grid
-// 	position: relative
-// 	grid-template-rows: 1fr 1fr
-// 	grid-template-columns: 17% 47% 35.3%
-// 	grid-template-areas: "header-logo header-searchbar header-profile"
-// .header-logo
-// 	grid-row-start: 2
-// 	font-family: Poppins
-// 	font-size: 32px
-// 	line-height: 48px
-// 	text-decoration: none
-// 	color: #11142D
-// 	justify-self: center
-// 	align-self: end
-// .orange-dot
-// 	color:#FF7C5D
-
-// .header-serchbar 
-// 	grid-row-start: 2
-// 	align-self: center
-// 	height: 22px
-// 	border: 2px solid #808191
-// .search_icon
-// 	position: absolute
-// 	left: 200px
-// 	top: 80px
-// 	align-self: center
-// .header-profile
-// 	grid-row-start: 2
-// 	background-color: #F5FBFF
-// 	display: grid
-// 	grid-template-areas: "avatar name notification shop-notification" ". status . ."
-// 	&__avatar
-// 		grid-area: avatar
-// 		justify-self: end
-// 		align-self: center
-// 		width: 40px
-// 		height: 40px
-// 		border-radius: 50%
-// 		overflow: hidden
-// 	&__name
-// 		grid-area: name
-// 		align-self: center
-// 		font-weight: 600
-// 		font-size: 14px
-// 		line-height: 20px
-// 	&__status
-// 		grid-area: status
-// 		color: #808191
-// 		font-weight: 600
-// 		font-size: 13px
-// 	&__notification
-// 		grid-area: notification
-// 		height: 48px
-// 		width: 48px
-// 		border-radius: 100%
-// 		background-color:#FFFFFF
-// 		border: none
-// .shop-notification 
-// 	grid-area: shop-notification
-// 	height: 48px
-// 	width: 48px
-// 	border-radius: 100%
-// 	background-color:#FFFFFF
-// 	border: none
-
 body
+    
 	background-image: url(../img/main-bg.jpg)
+	margin: 0
+	pading: 0
+	height: 100vh
+	display: grid
+	align-items: center
+	justify-items: center
+	
+
 .wrapper
 	display: grid
-	grid-gap: 25px
-	grid-template-areas: "sidebar-nav main-content"
-	grid-template-columns: 17% 47% 35.3%
-	width: 1200px
-	height: 740px
-	position: absolute
-	left: 20%
-	top: 11.83%
-	bottom: 11.83%
+	grid-template-areas: "sidebar-nav main-content sidebar-content" 
+	grid-template-columns: 17.9% 47% 35.1%
+	width: 1440px
+	height: 916px
 	background-color: #FDFDFD
 	border-radius: 24px
 	overflow: hidden
+
 .sidebar-nav
+	grid-area: sidebar-nav
 	height: 100%
 	border-right: 1px solid #E4E4E4
 	display: grid
 	grid-template-areas: "sidebar-nav__logo" "sidebar-nav__navigation" "."
 	grid-template-rows: 11.4% 49.8% 38.8%
 	grid-area: sidebar-nav
+	grid-row-gap: 46px
+
 	&__logo
-		display: block
+		
 		grid-area: sidebar-nav__logo
-		justify-self: center
+		display: block
+		padding-left: 44px
 		align-self: end
 		text-decoration: none
 		font-family: Poppins
@@ -121,22 +49,28 @@ body
 	&__navigation
 		grid-area: sidebar-nav__navigation
 		display: grid
-		align-items: center
+
 		grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%
+
 	&__link
-		display: block
+		display: inline-block
+		padding: 23px 0px 0px 64px
 		height: 100%
-		margin-top: 57px
-		// padding: 20px 0px 20px 40px
 		text-decoration: none
 		color: #808191
 		font-size: 14px
-		&:first-child
+		&_active
 			background-color: #2F3CED
 			border-radius: 0px 12px 12px 0px
 			color: white
+
+.main-content
+	grid-area: main-content
+.sidebar-content
+	grid-area: sidebar-content
 .orange-dot
 	color: #FF7C5D
+
 .main-content
 	height 100%
 	display: grid
@@ -186,7 +120,6 @@ body
 		grid-area: example-products
 	&__cart
 	&__title-cart
-		color: 	green
 	&__img-cart
 	&__category-cart
 	&__comment-cart
