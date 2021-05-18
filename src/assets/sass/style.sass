@@ -1,0 +1,193 @@
+@import "reset.css"
+@font-face
+	font-family: Poppins
+	font-style: normal
+	font-weight: 600
+	src: url('../fonts/poppins/Poppins-SemiBold.ttf')
+
+// body
+// 	background-image: url(../img/main-bg.jpg)
+// .main-contener 
+// 	position: absolute
+// 	left: 20%
+// 	top: 11.83%
+// 	bottom: 11.83%
+// 	background-color: #FDFDFD
+// 	border-radius: 24px
+// 	overflow: hidden
+// 	width: 1200px
+// 	height: 740px
+// .header 
+// 	display: grid
+// 	position: relative
+// 	grid-template-rows: 1fr 1fr
+// 	grid-template-columns: 17% 47% 35.3%
+// 	grid-template-areas: "header-logo header-searchbar header-profile"
+// .header-logo
+// 	grid-row-start: 2
+// 	font-family: Poppins
+// 	font-size: 32px
+// 	line-height: 48px
+// 	text-decoration: none
+// 	color: #11142D
+// 	justify-self: center
+// 	align-self: end
+// .orange-dot
+// 	color:#FF7C5D
+
+// .header-serchbar 
+// 	grid-row-start: 2
+// 	align-self: center
+// 	height: 22px
+// 	border: 2px solid #808191
+// .search_icon
+// 	position: absolute
+// 	left: 200px
+// 	top: 80px
+// 	align-self: center
+// .header-profile
+// 	grid-row-start: 2
+// 	background-color: #F5FBFF
+// 	display: grid
+// 	grid-template-areas: "avatar name notification shop-notification" ". status . ."
+// 	&__avatar
+// 		grid-area: avatar
+// 		justify-self: end
+// 		align-self: center
+// 		width: 40px
+// 		height: 40px
+// 		border-radius: 50%
+// 		overflow: hidden
+// 	&__name
+// 		grid-area: name
+// 		align-self: center
+// 		font-weight: 600
+// 		font-size: 14px
+// 		line-height: 20px
+// 	&__status
+// 		grid-area: status
+// 		color: #808191
+// 		font-weight: 600
+// 		font-size: 13px
+// 	&__notification
+// 		grid-area: notification
+// 		height: 48px
+// 		width: 48px
+// 		border-radius: 100%
+// 		background-color:#FFFFFF
+// 		border: none
+// .shop-notification 
+// 	grid-area: shop-notification
+// 	height: 48px
+// 	width: 48px
+// 	border-radius: 100%
+// 	background-color:#FFFFFF
+// 	border: none
+
+body
+	background-image: url(../img/main-bg.jpg)
+.wrapper
+	display: grid
+	grid-gap: 25px
+	grid-template-areas: "sidebar-nav main-content"
+	grid-template-columns: 17% 47% 35.3%
+	width: 1200px
+	height: 740px
+	position: absolute
+	left: 20%
+	top: 11.83%
+	bottom: 11.83%
+	background-color: #FDFDFD
+	border-radius: 24px
+	overflow: hidden
+.sidebar-nav
+	height: 100%
+	border-right: 1px solid #E4E4E4
+	display: grid
+	grid-template-areas: "sidebar-nav__logo" "sidebar-nav__navigation" "."
+	grid-template-rows: 11.4% 49.8% 38.8%
+	grid-area: sidebar-nav
+	&__logo
+		display: block
+		grid-area: sidebar-nav__logo
+		justify-self: center
+		align-self: end
+		text-decoration: none
+		font-family: Poppins
+		font-size: 32px
+		line-height: 48px
+		color: #11142D
+
+	&__navigation
+		grid-area: sidebar-nav__navigation
+		display: grid
+		align-items: center
+		grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%
+	&__link
+		display: block
+		height: 100%
+		margin-top: 57px
+		// padding: 20px 0px 20px 40px
+		text-decoration: none
+		color: #808191
+		font-size: 14px
+		&:first-child
+			background-color: #2F3CED
+			border-radius: 0px 12px 12px 0px
+			color: white
+.orange-dot
+	color: #FF7C5D
+.main-content
+	height 100%
+	display: grid
+	grid-template-areas: "searchbar" "." "slider" "." "example-products"
+	grid-template-rows: 7% 11.6% 44.4% 5% 32%
+	grid-area: main-content
+	&__searchbar
+		display: grid
+		grid-template-areas: "searchbar-field searchbar-field"
+		grid-area: searchbar
+	&__searchbar-icon
+		grid-area: "searchbar-icon"
+	&__searchbar-field
+		grid-area: "searchbar-field"
+		border: 2px solid #808191
+
+	&__slider
+		grid-area: slider
+		display: grid
+		grid-template: 1fr 1fr 1fr / 59.5% 40.5%
+		grid-template-areas: "slider-img slider-title" "slider-img slider-subtitle" "slider-img slider-button"
+		background-color: #2F3CED
+		border-radius: 24px
+		box-shadow: 0px 21px 0px 0px rgba(175, 213, 255, 0.4), 0px 11px 0px 0px #AFD5FF
+
+	&__img
+		grid-area: slider-img
+
+	&__title
+		grid-area: slider-title
+		color: white
+		font-size: 24px
+		font-weight: bold
+		align-self: center
+	&__subtitle
+		grid-area: slider-subtitle
+		color: white
+	&__button
+		grid-area: slider-button
+		background-color: #fЗff
+		font-weight: bold
+		border-radius: 14px
+		width: 193px
+		height: 56px
+		border: none
+	&__example-products
+		grid-area: example-products
+	&__cart
+	&__title-cart
+	&__img-cart
+	&__category-cart
+	&__comment-cart
+	&__rating-cart
+	&__lastReview-cart
