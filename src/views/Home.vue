@@ -4,8 +4,8 @@
       <a href="#" class="sidebar-nav__logo"
         >Elearn<span class="orange-dot">.</span></a>
       <nav class="sidebar-nav__navigation">
-        <a class="sidebar-nav__link sidebar-nav__link_active" href="#">Главная</a>
-        <a class="sidebar-nav__link" href="#">Электротехника</a>
+        <a class="sidebar-nav__link sidebar-nav__link_active" href="/home">Главная</a>
+        <a class="sidebar-nav__link" href="/about">Электротехника</a>
         <a class="sidebar-nav__link" href="#">Favorite</a>
         <a class="sidebar-nav__link" href="#">Test</a>
         <a class="sidebar-nav__link" href="#">Achievments</a>
@@ -26,14 +26,14 @@
           class="main-content__searchbar-field"
         />
       </div>
-      <div class="main-content__slider">
+       <div class="main-content__slider">
         <img
           src="../assets/img/slider-img.png"
           alt=""
           class="main-content__img"
         />
         <h2 class="main-content__title">
-          Artificial<br />
+          Artificial
           Intelligence for Marketing
         </h2>
         <p class="main-content__subtitle">
@@ -42,19 +42,9 @@
         </p>
         <button class="main-content__button">Узнать больше</button>
       </div>
-      <div class="main-content__example-products">
-        <h2 class="main-content__title"></h2>
-        <div class="main-content__cart">
-          <h3 class="main-content__title-cart"></h3>
-          <img src="#" alt="" class="main-content__img-cart" />
-          <p class="main-content__category-cart"></p>
-          <p class="main-content__comment-cart"></p>
-          <img src="#" alt="" class="main-content__rating-cart" />
-          <img src="#" alt="" class="main-content__lastReview-cart" />
-        </div>
-      </div>
     </article>
-    <aside class="sidebar-content"></aside>
+    <aside class="sidebar-content">
+    </aside>
   </div>
 </template>
 
